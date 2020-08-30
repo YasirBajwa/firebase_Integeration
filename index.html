@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Firebase</title>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyD_3ce0rc7sSv69YPnck_emF23Z90o8tuQ",
+          authDomain: "quiz-app-in-javascript.firebaseapp.com",
+          databaseURL: "https://quiz-app-in-javascript.firebaseio.com",
+          projectId: "quiz-app-in-javascript",
+          storageBucket: "quiz-app-in-javascript.appspot.com",
+          messagingSenderId: "216825668445",
+          appId: "1:216825668445:web:c0bcacbbeaab111dafbeb4"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
+   
+</head>
+<body class="h-100">
+
+    <div class="container h-100">
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-10 col-md-8 col-lg-6">
+               
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" class="form-control username" id="username" placeholder="Username..." name="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" class="form-control password" id="password" placeholder="Password..." name="password">
+                    </div>
+                    <button  class="btn btn-primary btn-customized" onclick="saveData()">Login</button>
+                    
+               
+            </div>
+        </div>
+    </div>
+   
+
+      <script src="script.js"></script>
+</body>
+</html>
